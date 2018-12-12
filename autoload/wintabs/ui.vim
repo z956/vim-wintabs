@@ -101,6 +101,7 @@ function! s:get_bufline_non_memoized(window, ...)
           \'is_right': active_index >= 0 && i > active_index,
           \'is_active': is_active,
           \'is_active_window': is_active_window,
+          \'bufnr': i + 1,
           \})
     let element.type = 'buffer'
     let element.number = buffer
